@@ -6,9 +6,6 @@ from tornado.web import RequestHandler, Application
 from task.RedisHelper import RedisClient
 
 
-API_PORT = 8000
-
-
 class MainHandler(RequestHandler):
     def initialize(self, redis):
         self.redis = redis
